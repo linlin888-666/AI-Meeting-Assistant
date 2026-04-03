@@ -24,9 +24,9 @@
 - **Infrastructure**: Local File System (JSON & WAV storage)
 
 ## 📸 スクリーンショット (Screenshots)
-- ![Main UI](docs/home.png)
-- ![Upload UI](docs/upload.png)
-- ![History UI](docs/history.png)
+![Main UI](docs/home.png)
+![Upload UI](docs/upload.png)
+![History UI](docs/history.png)
 
 ## ⚙️ セットアップ (Installation)
 1. **リポジトリをクローン**
@@ -35,13 +35,14 @@
    cd Meeting_AI
 
 ## システムアーキテクチャ（System Architecture）
-- ![System Architecture](docs/System Architecture.png)
+![System Architecture](docs/System%20Architecture.png)
 
 ## 📁 ディレクトリ構成（Project Structure）
 ```text
 MEETING_AI/                          # プロジェクトルート
 ├── app.py                           # メインエントリーポイント
 ├── style.py 　　　　                # UIのデザイン
+├── `docs`　　　                     # 写真
 ├── requirements.txt                 # 依存パッケージ一覧
 ├── .env                             # 環境変数
 ├── .gitignore                       # Git除外設定（アップロードしないファイル指定）
