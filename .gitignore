@@ -1,0 +1,8 @@
+.env
+saved_records/
+__pycache__/
+*.pyc
+venv/
+.venv/
+.DS_Store
+Thumbs.db
