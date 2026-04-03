@@ -35,7 +35,7 @@
    cd Meeting_AI
 
 ## システムアーキテクチャ（System Architecture）
-![System Architecture](`docs`/System_Architecture.png)
+![System_Architecture](`docs`/System_Architecture.png)
 
 ## 📁 ディレクトリ構成（Project Structure）
 ```text
