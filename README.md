@@ -37,28 +37,25 @@
    git clone https://github.com/linlin888-666/AI-Meeting-Assistant.git
    cd Meeting_AI
 
-2. **仮想環境の作成と有効化**
-  ```bash
-  Windows<br>
-  python -m venv venv
+2. **仮想環境の作成と有効化**<br>
+  **Windows**<br>
+  python -m venv venv<br>
   .\venv\Scripts\activate
 
-  Mac/Linux<br>
-  python3 -m venv venv
+  **Mac/Linux**<br>
+  python3 -m venv venv<br>
   source venv/bin/activate
 
-3. **依存パッケージのインストール**
-  ```bash
+3. **依存パッケージのインストール**<br>
   pip install --upgrade pip<br>
   pip install -r requirements.txt
 
 4. **環境変数の設定**<br>
-  ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
-  ```bash
+  ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。<br>
+   ```bash
   OPENAI_API_KEY=あなたのAPIキー
 
-5. **アプリの起動**
-  ```bash
+5. **アプリの起動**<br>
   streamlit run app.py
 
 ## システムアーキテクチャ（System Architecture）
