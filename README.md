@@ -38,33 +38,32 @@
    cd Meeting_AI
 
 2. **仮想環境の作成と有効化**<br>
-  **Windows**
-   ```bash
-  python -m venv venv
-  .\venv\Scripts\activate
-   ```
-  **Mac/Linux** 
-  ```bash
+   **Windows**
+    ```bash
+   python -m venv venv
+   .\venv\Scripts\activate
+
+<br>
+
+   **Mac/Linux** 
+     ```bash
   python3 -m venv venv
   source venv/bin/activate
-   ```
+
 
 3. **依存パッケージのインストール**
- ```bash
+    ```bash
   pip install --upgrade pip<br>
   pip install -r requirements.txt
-  ```
 
 4. **環境変数の設定**<br>
-  ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
- ```bash
-  OPENAI_API_KEY=あなたのAPIキー
-  ```
+   ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
+    ```bash
+   OPENAI_API_KEY=あなたのAPIキー
 
 5. **アプリの起動**
- ```bash
-  streamlit run app.py
- ```
+    ```bash
+   streamlit run app.py
 ## システムアーキテクチャ（System Architecture）
 ![System_Architecture](`docs`/System_Architecture.png)
 
