@@ -43,9 +43,7 @@
    python -m venv venv
    .\venv\Scripts\activate
 
-<br>
-
-   **Mac/Linux** 
+**Mac/Linux** 
     ```bash
    python3 -m venv venv
    source venv/bin/activate
@@ -53,7 +51,7 @@
 
 3. **依存パッケージのインストール**
     ```bash
-   pip install --upgrade pip<br>
+   pip install --upgrade pip
    pip install -r requirements.txt
 
 4. **環境変数の設定**<br>
