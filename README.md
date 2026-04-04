@@ -30,9 +30,30 @@
 
 ## ⚙️ セットアップ (Installation)
 1. **リポジトリをクローン**
+   推奨環境: Python 3.9 以上
     ```bash
    git clone https://github.com/linlin888-666/AI-Meeting-Assistant.git
    cd Meeting_AI
+
+2. **仮想環境の作成と有効化**
+  ### Windows
+  python -m venv venv
+  .\venv\Scripts\activate
+
+  ### Mac/Linux
+  python3 -m venv venv
+  source venv/bin/activate
+
+3. **依存パッケージのインストール**
+- pip install --upgrade pip
+- pip install -r requirements.txt
+
+4. **環境変数の設定**
+  ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
+- OPENAI_API_KEY=あなたのAPIキー
+
+5. **アプリの起動**
+- streamlit run app.py
 
 ## システムアーキテクチャ（System Architecture）
 ![System_Architecture](`docs`/System_Architecture.png)
@@ -61,13 +82,19 @@ MEETING_AI/                          # プロジェクトルート
 │   └── (JSONファイル等)              # 生成された議事録データ（自動作成）
 ```
 
-### 依存パッケージのインストール
-- pip install -r requirements.txt
+## 🚀 今後のアップデート予定 (Roadmap)
 
-### 環境変数の設定
-#### ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
-- OPENAI_API_KEY=あなたのAPIキー
+### 現在、MVP（最小機能版）として動作していますが、さらなるユーザー体験向上のため、以下の機能を実装予定です：
 
-### アプリの起動
-- streamlit run app.py
+1. **WebSocketによるリアルタイム処理の最適化**
+
+- 現在のHTTPリクエスト方式からWebSocketへ移行し、音声認識の遅延（Latency）をさらに短縮します。
+
+2. **重複翻訳の防止ロジックの改善**
+
+- 音声の切り出しアルゴリズムを改良し、同じ文章が繰り返し翻訳される問題を解決します。
+
+3. **UI/UXのブラッシュアップ**
+
+- 翻訳結果の表示アニメーションを追加し、より直感的なフィードバックを提供します。
 
