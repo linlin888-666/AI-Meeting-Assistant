@@ -8,8 +8,10 @@
 日本での学生生活において、スピードの速い講義内容をリアルタイムで完全に理解することは大きな挑戦です。この課題を解決するため、生成AI（Whisper & GPT）を活用し、音声を即座にテキスト化・翻訳して記録に残せるツールを開発しました。
 
 ## 🚀 主な機能 (Features)
-- **リアルタイム文字起こし & 翻訳**: マイク入力から4秒ごとに音声を切り出し、Whisperでテキスト化、GPTで翻訳を同時進行します。
-- **ファイルアップロード解析**: 既存の音声ファイル（MP3/WAV/M4A）をアップロードし、一括で議事録を作成します。
+- **リアルタイム文字起こし & 翻訳**: 
+  マイク入力から4秒ごとに音声を切り出し、Whisperでテキスト化、GPTで翻訳を同時進行します。
+- **ファイルアップロード解析**: 
+  既存の音声ファイル（MP3/WAV/M4A）をアップロードし、一括で議事録を作成します。
 - **履歴管理システム**:
     - **データ永続化**: 翻訳結果を JSON/TXT 形式でローカルに保存。
     - **音声録音の紐付け**: テキストだけでなく、録音データも同時に保存し、履歴からいつでも再生可能。
@@ -29,31 +31,35 @@
 ![History UI](`docs`/history.png)
 
 ## ⚙️ セットアップ (Installation)
-1. **リポジトリをクローン**
+1. **リポジトリをクローン**<br>
    推奨環境: Python 3.9 以上
     ```bash
    git clone https://github.com/linlin888-666/AI-Meeting-Assistant.git
    cd Meeting_AI
 
 2. **仮想環境の作成と有効化**
-  ### Windows
+  ```bash
+  Windows<br>
   python -m venv venv
   .\venv\Scripts\activate
 
-  ### Mac/Linux
+  Mac/Linux<br>
   python3 -m venv venv
   source venv/bin/activate
 
 3. **依存パッケージのインストール**
-- pip install --upgrade pip
-- pip install -r requirements.txt
+  ```bash
+  pip install --upgrade pip<br>
+  pip install -r requirements.txt
 
-4. **環境変数の設定**
+4. **環境変数の設定**<br>
   ルートディレクトリに .env ファイルを作成し、APIキーを設定してください。
-- OPENAI_API_KEY=あなたのAPIキー
+  ```bash
+  OPENAI_API_KEY=あなたのAPIキー
 
 5. **アプリの起動**
-- streamlit run app.py
+  ```bash
+  streamlit run app.py
 
 ## システムアーキテクチャ（System Architecture）
 ![System_Architecture](`docs`/System_Architecture.png)
